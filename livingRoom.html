@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/b.png">
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/loaders.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>LIVINGROOM design</title>
+	<style>
+		.shop-banner {
+			background-color: rgb(222, 222, 223);
+			background-size: cover;
+			color: black;
+			padding: 60px 0;
+			margin-bottom: 1rem;
+		}
+		
+		.shop-banner h1 {
+			font-size: 36px;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 600;
+			margin-bottom: 1rem;
+		}
+		.shop-banner P {
+			color: rgb(113, 113, 115);
+			margin-bottom: 0;
+		}
+		
+		.products-section {
+			padding: 3rem 0;
+			background-color: #f8f9fa;
+		}
+		
+		.product-card {
+			background: #fff;
+			padding: 1.5rem;
+			border-radius: 12px;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+			text-align: center;
+			margin-bottom: 30px;
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+			height: 450px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			overflow: hidden;
+			max-width: 400px;
+		}
+		
+		.product-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+		}
+		
+		.product-card img {
+			width: 100%;
+			height: 320px;
+			object-fit: cover;
+			border-radius: 8px;
+			margin-bottom: 1rem;
+		}
+
+		.center {
+			overflow: hidden;
+			border-radius: 8px;
+			margin-bottom: 0.5rem;
+			height: 320px;
+		}
+		
+		.center img {
+			transition: all 0.8s ease;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+
+		
+		.center:hover img {
+			transform: scale(1.15);
+		}
+		
+		
+		.product-card h5 {
+			font-size: 1.1rem;
+			color: #333;
+			margin-bottom: 0.8rem;
+			font-weight: 500;
+			line-height: 1.4;
+			height: 3em;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			padding: 0 0.5rem;
+		}
+		
+		.price {
+			color: #d9534f;
+			font-weight: 600;
+			font-size: 1.15rem;
+			margin-top: auto;
+			padding: 0.5rem 0;
+		}
+
+		.products-section {
+			padding: 3rem 0;
+			background-color: #f8f9fa;
+		}
+
+		.products-section .row {
+			margin-bottom: 2rem;
+		}
+
+		@media (max-width: 768px) {
+			.product-card {
+				height: 450px;
+				max-width: 340px;
+			}
+			
+			.center {
+				height: 280px;
+			}
+			
+			.product-card img {
+				height: 280px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.product-card {
+				height: 420px;
+				max-width: 300px;
+			}
+			
+			.center {
+				height: 250px;
+			}
+			
+			.product-card img {
+				height: 250px;
+			}
+		}
+
+		.footer-section {
+			margin-top: 3rem;
+			border-top: 1px solid #eee;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="loading">
+		<div class="loader"></div> 
+		</div>
+	<!-- Start Header Section -->
+	<header class="header" data-aos="fade-down" data-aos-duration="800">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<div class="logo navbar-brand">
+					<h1 class="logo-text">
+						<span class="logo-text-amber">BE</span>
+						<span class="logo-text-gray">FURNITURE</span>
+					</h1>
+					<p class="logo-subtext">Furniture For Everyone</p>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav m-auto  ">
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-link-amber" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="About-us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="Blog.html">Blog</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button"
+								data-toggle="dropdown" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="signup.html">My Account</a></li>
+								<li><a class="dropdown-item" href="offer.html">For Sales</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="services.html">Services..</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="ContectUs.html">Contact Us</a>
+						</li>
+					</ul>
+					<div class="header-right ms-auto">
+						<button aria-label="Search" class="icon-button" onclick="openSearch()">
+							<i class="fas fa-search icon"></i>
+						</button>
+						<a href="AddToCart.html">
+							<button aria-label="Shopping Cart" class="icon-button">
+								<i class="fas fa-shopping-cart icon"></i>
+							</button>
+						</a>
+						<button aria-label="User Account" class="icon-button">
+							<i class="fas fa-user icon"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header Section -->
+	 <!-- Start Intro Section -->
+
+   
+    <section class="shop-banner text-center" data-aos="zoom-in">
+        <div class="container">
+            <h1>Living-Room</h1>
+           <P>Home / Shop</P>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p12.avif" class="img-fluid" alt="Sofa Design">
+                        </div>
+                        <h5>Ach Sofa Design in Wood – A Perfect Balance</h5>
+                        <p class="price">Rs48,000.00 - Rs215,000.00</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p11.avif" class="img-fluid" alt="L Shape Sofa">
+                        </div>
+                        <h5>Aga Corner/L Shape Sofa Design – Comfort & Style</h5>
+                        <p class="price">Rs225,000.00</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p10.avif" class="img-fluid" alt="Azem Sofa Set">
+                        </div>
+                        <h5>Azem Sofa Set – Premium Sofa Set</h5>
+                        <p class="price">Rs45,500.00 - Rs275,000.00</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p9.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                        <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                        <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p13.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p20.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p18.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p19.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p21.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p24.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p25.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p27.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+            </div>
+			<div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p13.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p20.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p18.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p19.webp" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+            </div>
+			<div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p21.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p24.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p25.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="center">
+                            <img src="images/p27.avif" class="img-fluid" alt="Bemo Sofa Set">
+                        </div>
+                            <h5>Bemo Sofa Set – Modern Sofa Set Designs</h5>
+                            <p class="price">Rs48,500.00 - Rs255,000.00</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+
+			<div class="sofa-img" data-aos="fade-up">
+				<img src="images/sofa.png" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="subscription-form" data-aos="fade-up" data-aos-duration="1000">
+						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
+									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+						<form action="#" class="row g-3">
+							<div class="col-auto">
+								<input type="text" class="form-control" placeholder="Enter your name">
+							</div>
+							<div class="col-auto">
+								<input type="email" class="form-control" placeholder="Enter your email">
+							</div>
+							<div class="col-auto">
+								<button type="submit" class="btn btn-primar" aria-label="Submit newsletter">
+									<span class="fa fa-paper-plane"></span>
+								</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-5 mb-5">
+				<div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+					<div class="mb-4 footer-logo-wrap"><a href="#"
+							class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
+					<p class="mb-4">Facilisis made easy as pure rutrum lobortis. Live without fear, just like a
+						smooth-flowing stream. The essence of existence lies in adaptability. Every challenge is an
+						opportunity to grow. Embrace the journey.</p>
+
+					<ul class="list-unstyled custom-social">
+						<li><a href="#" aria-label="Visit our Facebook page"><span
+									class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li><a href="#" aria-label="Visit our Twitter page"><span
+									class="fa fa-brands fa-twitter"></span></a></li>
+						<li><a href="#" aria-label="Visit our Instagram page"><span
+									class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#" aria-label="Visit our LinkedIn page"><span
+									class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
+					<div class="row links-wrap">
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Knowledge base</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Our team</a></li>
+								<li><a href="#">Leadership</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Nordic Chair</a></li>
+								<li><a href="#">Kruzo Aero</a></li>
+								<li><a href="#">Ergonomic Chair</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6">
+						<p class="mb-2 text-center text-lg-start">Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+							<span>BeFurniture</span>
+						</p>
+					</div>
+
+					<div class="col-lg-6 text-center text-lg-end">
+						<ul class="list-unstyled d-inline-flex ms-auto">
+							<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- Live Chat Button -->
+	<div class="live-chat">
+		<button class="live-chat-button" onclick="openChat()">
+			<i class="fas fa-comment"></i>
+			Live Chat
+		</button>
+	</div>
+
+	<!-- End Live Chat Button -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="JAVASCRIPT/script.js"></script>
+	<!-- AOS Animation -->
+	<script>
+		AOS.init({
+			offset: 100,
+			delay: 0,
+			duration: 800,
+			easing: 'ease-in-out',
+			once: true,
+			mirror: false,
+			anchorPlacement: 'top-bottom',
+			disable: 'mobile'
+		});
+		// Loader Hide Script
+		window.addEventListener('load', function() {
+			const loading = document.getElementById('loading');
+			loading.style.opacity = '0';
+			setTimeout(() => {
+				loading.style.display = 'none';
+			}, 1500);
+		});
+
+	</script>
+
+</body>
+
+</html>

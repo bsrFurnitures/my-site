@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/b.png">
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/loaders.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link href="style.css" rel="stylesheet">
+	<title>DINING design</title>
+</head>
+<style>
+	.cont{
+		  background-color:rgb(208, 213, 211);
+		  width: 100%;
+		}
+		.topic{
+			width: 100%;
+			height: 510px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #9da8b1;
+			text-align: center;
+			border:8px;
+			flex-direction: row;
+			margin: 0;
+		}
+		.img-top{
+			width: 100%;
+			height: 510px;
+			border-radius: 7px;
+		}
+		.center{
+			font-style: italic;
+			font-weight: 600;
+			color: #dee2e6;
+		}
+	   .text{
+		   font-style: oblique;
+		   opacity:0.8;
+		   color:rgb(0, 0, 0);
+		   font-weight: 600;
+	   }
+	   .sign{
+		  color: #06412a;
+		  cursor: pointer;
+	   }
+	   .design{
+		margin: 0px 30px;
+	   }
+	   .brands{
+		font-style:oblique;
+		font-weight: 600;
+		text-align: center;
+		font-size: 40px;
+		color: rgb(48, 71, 7);
+	   }
+	   .famous{
+		text-align: center;
+		color:#6c757d;
+		margin-bottom: 25px;
+	   }
+	.cards{
+			background-color: #3b5d50;
+			color: azure;
+			font-style: italic;
+			font-weight: 800;
+			text-align: center;
+		}
+	 .card-body{
+			background: #f8f9fa;
+			border-radius: 12px;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+			text-align: center;
+			margin-bottom: 30px;
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+			height: 150px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			overflow: hidden;
+			max-width: 500px;
+			padding: 1rem;
+			font-family: 'Poppins', sans-serif;
+		}
+	.card-title {
+			font-weight: 700;
+			font-size: 1.3rem;
+			margin: 0, 0.5rem;
+			color: #112718;
+		}
+	.card-text {
+			font-size: 0.8rem;
+			color: #6c757d;
+			margin-bottom: 1rem;
+		}
+	.card :hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+		}
+		
+	.card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 7px;
+			margin-bottom: 1rem;
+		}
+
+	.card-footer {
+			background: transparent;
+			border-top: 2px solid #dee2e6;
+			padding: 0.75rem 1rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	   }
+   .price {
+		   font-weight: 800; 
+		   color : #3b5d50;
+	  }
+	.card-btn{
+		   width: 40px;
+		   height: 40px;
+		   text-align: center;
+		   line-height: 40px;
+		   display: inline-block;
+		   background: #dce5e4;
+		   color: #3b5d50;
+		   border-radius: 50%;
+		   border : none !important;
+		  transition: all 0.3s ease;
+		}
+	.card-btn:hover {
+		  background: #3b5d50;
+		  color: #ffffff;
+		}
+  </style>
+
+<body>
+	<div id="loading">
+		<div class="loader"></div> 
+		</div>
+	<!-- Start Header Section -->
+	<header class="header" data-aos="fade-down" data-aos-duration="800">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<div class="logo navbar-brand">
+					<h1 class="logo-text">
+						<span class="logo-text-amber">BE</span>
+						<span class="logo-text-gray">FURNITURE</span>
+					</h1>
+					<p class="logo-subtext">Furniture For Everyone</p>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav m-auto  ">
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-link-amber" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="About-us.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="Blog.html">Blog</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle nav-link-amber" href="#" role="button"
+								data-toggle="dropdown" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="signup.html">My Account</a></li>
+								<li><a class="dropdown-item" href="offer.html">For Sales</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="services.html">Services..</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-amber" href="ContectUs.html">Contact Us</a>
+						</li>
+					</ul>
+					<div class="header-right ms-auto">
+						<button aria-label="Search" class="icon-button" onclick="openSearch()">
+							<i class="fas fa-search icon"></i>
+						</button>
+						<a href="AddToCart.html">
+							<button aria-label="Shopping Cart" class="icon-button">
+								<i class="fas fa-shopping-cart icon"></i>
+							</button>
+						</a>
+						<button aria-label="User Account" class="icon-button">
+							<i class="fas fa-user icon"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End Header Section -->
+	
+		<!-- End Header Section -->
+		 <!--cards section-->
+		  <div class="cards">
+			 <h1>BRILLIANT IDEAS OF DINING AREA</h1>
+			 <p>A compendium for luxury living</p>
+		  </div>
+		  <div class="topic">
+			<img src="images/luxuryimg.png" class="img-top" alt="" style="width: 100%;">
+			<div>
+				<h2 class="center">VARIOUS TYPES OF GORGEOUS DINING ROOM STYLES</h2>
+				<p class="text">Each of these stylish dining room designs prove that dining in can be a treat too.This exclusive interview closely examines one of the world's foremost design styles.As we celebrate this remarkable array of newcomers and distinguished alumni alike, let their industry-defining portfolios transport you to a world of design inspiration.this year's honourees embody outstanding creativity, shaping the world of interiors and leaving an indelible mark on our industry. Their lasting impact, innovative thinking, and inimitable style have earned them a place on this prestigious list and set the tone for an exciting year ahead.As we celebrate this remarkable array of newcomers and distinguished alumni alike, let their industry-defining portfolios transport you to a world of design inspiration.</p>
+					<div class="sign">BY Esha Noor ,Interiors Director</div>
+			</div>
+		  </div>
+		  <div class="design">
+			 <h3 class="brands">SOME WELL-KNOWN BRANDS</h3>
+			 <p class="famous">From renowned heritage furniture brands to game-changing new additions, thesee world's most brands., advice, projects and products of the world's most famous interior designers.</p>
+		  </div>
+		  <div class="container cont">
+			  <div class="row row-cols-1 row-cols-md-2 g-4 ">
+				  <div class="card" style="width:18rem ;">
+					<img src="images/diningroomimg.png" class="card-img-top" alt="..."  style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Dining Room with Stylish Glamour</h5>
+					  <p class="card-text"> Comfortable chairs are a must and are usually upholstered tactile fabrics in smart tones; tables are subtle statement-makers; and lighting is well-chosen and reminiscent of a deluxe eatery.</p>
+					</div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				  </div>
+				  <div class="card" style="width:18rem;">
+					<img src="images/img2.png" class="card-img-top" alt="..."  style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Dining Room with Classic Sophistication</h5>
+					  <p class="card-text">Classic by name, classic by nature—this is the exemplar for all luxury dining rooms and a great choice for a host or hostess with the most. It’s the quintessentially pristine dining room.</p>
+					</div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				  </div>
+				  <div class="card" style="width:20rem;">
+					<img src="images/img3.png" class="card-img-top" alt="..." style="width: 100%;">
+					<div class="card-body">
+					  <h5 class="card-title">Dining Room with Refined Opulence</h5>
+					  <p class="card-text">Guests expect a show of a meal with this style of dining room as its backdrop. Here, it’s all about creating a lavish display and pairing it with an equally impressive dinner. Don’t be scared of oversized proportions, but keep upholstery simple to maintain a sophisticated aesthetic.</p>
+					</div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				  </div>
+				  <div class="card" style="width:20rem;">
+					  <img src="images/img4.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Smart Casual Dining Room</h5>
+						<p class="card-text">Proving that a relaxed look can be just as luxurious, this style is characterised by an inherent informality but always with a refined element  A self-contained dining set up is a lovely addition to a kitchen.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img5.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining Room with Country Charm</h5>
+						<p class="card-text">A popular dining room style choice, the country look is nothing if not familiar and welcoming which is what so many people want for their home, no less their dining room. An airy open plan conversion makes a great site for this kind of style</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img6.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining Room with Neoclassical Elegance</h5>
+						<p class="card-text">Dignified and classy, a traditional dining room like this one is ideal for those antique lovers or those who enjoy mixing antiques in with modern furniture</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img7.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining Room with Modern Chinoiserie</h5>
+						<p class="card-text">Add an unexpected element to your space with a modern-day take on the ever-loved interior design style which was favoured heavily in the 18th century</p>
+					  </div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+				</div>
+					<div class="card" style="width:20rem;">
+					  <img src="images/img8.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Dining room with Traditional Grandeur</h5>
+						<p class="card-text">This kind of dining room is the setting you’d imagine a special family dinner to happen in, including the annual Christmas dinner. Well-suited to and usually found in homes with generous proportions.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img9.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Contemporary Cool Dining Room</h5>
+						<p class="card-text">This is a no fuss, no muss kind of dining experience which allows the focus to remain on the meal (which should be appropriately conceptual). Silhouettes are discreet but always considered.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img10.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Rustic Luxury Dining Room</h5>
+						<p class="card-text">You can’t help but be drawn to the warmth of the rich materials and natural elements of this style. Carpentry is at its finest here with joints and hardware on show for a desirably artisanal touch.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img11.png" class="card-img-top" alt="..." style="width:100%;">
+					  <div class="card-body">
+						<h5 class="card-title"> Scandinavian style</h5>
+						<p class="card-text"> The Italy that emerged in the 60s was sexy, striking and bold. Scandinavian design took a different, humbler route, allied to functionalism rather than form."</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+					 <div class="card" style="width:20rem;">
+					  <img src="images/img12.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title"> Mid-century Modern Design-Dining</h5>
+						<p class="card-text">Woods such as rosewood, teak and walnut were used regularly and canary and mustard yellow, carnation and flamingo pink, chartreuse, pale turquoise and avocado are a quintessential Mid-century colourways.</p>
+					  </div>
+					<div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img13.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Minimalist Luxury Dining</h5>
+						<p class="card-text">A twentieth century interior design style known for simple forms, clean lines and uncomplicated finishes, minimalism considers the importance of negative space as much as positive space.
+						</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img14.png" class="card-img-top" alt="..." style="width: 100%;">
+					  <div class="card-body">
+						<h5 class="card-title">Interior Traditional Style</h5>
+						<p class="card-text">Traditional interior style is best represented by quintessential English furniture design and, in particular, the country’s impressive manufacturing history.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div> 
+					<div class="card" style="width:20rem;">
+					  <img src="images/img15.png" class="card-img-top" alt="..." style="width:100%;">
+					  <div class="card-body">
+						<h5 class="card-title"> Industrial Unique Dining</h5>
+						<p class="card-text">The industrial interior design style is a popular look for lofts and warehouses thanks to its stylishly undone aesthetic.Open-plan is the main configuration and high ceilings define some of the most eye-catching spaces.</p>
+					  </div>
+					  <div class="card-footer">
+						<span class="price">$3,999.00</span>
+						<button class="card-btn" aria-label="Add to Cart">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</div>
+					</div>
+	  
+			</div>
+		</div>
+
+    	<!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+
+			<div class="sofa-img" data-aos="fade-up">
+				<img src="images/sofa.png" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="subscription-form" data-aos="fade-up" data-aos-duration="1000">
+						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
+									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+						<form action="#" class="row g-3">
+							<div class="col-auto">
+								<input type="text" class="form-control" placeholder="Enter your name">
+							</div>
+							<div class="col-auto">
+								<input type="email" class="form-control" placeholder="Enter your email">
+							</div>
+							<div class="col-auto">
+								<button type="submit" class="btn btn-primar" aria-label="Submit newsletter">
+									<span class="fa fa-paper-plane"></span>
+								</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row g-5 mb-5">
+				<div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+					<div class="mb-4 footer-logo-wrap"><a href="#"
+							class="footer-logo"><span>Be</span>Furni<span>.</span></a></div>
+					<p class="mb-4">Facilisis made easy as pure rutrum lobortis. Live without fear, just like a
+						smooth-flowing stream. The essence of existence lies in adaptability. Every challenge is an
+						opportunity to grow. Embrace the journey.</p>
+
+					<ul class="list-unstyled custom-social">
+						<li><a href="#" aria-label="Visit our Facebook page"><span
+									class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li><a href="#" aria-label="Visit our Twitter page"><span
+									class="fa fa-brands fa-twitter"></span></a></li>
+						<li><a href="#" aria-label="Visit our Instagram page"><span
+									class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#" aria-label="Visit our LinkedIn page"><span
+									class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-8" data-aos="fade-left" data-aos-duration="1000">
+					<div class="row links-wrap">
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Knowledge base</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Our team</a></li>
+								<li><a href="#">Leadership</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-6 col-sm-6 col-md-3">
+							<ul class="list-unstyled">
+								<li><a href="#">Nordic Chair</a></li>
+								<li><a href="#">Kruzo Aero</a></li>
+								<li><a href="#">Ergonomic Chair</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="border-top copyright">
+				<div class="row pt-4">
+					<div class="col-lg-6">
+						<p class="mb-2 text-center text-lg-start">Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+							<span>BeFurniture</span>
+						</p>
+					</div>
+
+					<div class="col-lg-6 text-center text-lg-end">
+						<ul class="list-unstyled d-inline-flex ms-auto">
+							<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- Live Chat Button -->
+	<div class="live-chat">
+		<button class="live-chat-button" onclick="openChat()">
+			<i class="fas fa-comment"></i>
+			Live Chat
+		</button>
+	</div>
+<!-- End Live Chat Button -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="JAVASCRIPT/script.js"></script>
+	<!-- AOS Animation -->
+	<script>
+		AOS.init({
+			offset: 100,
+			delay: 0,
+			duration: 800,
+			easing: 'ease-in-out',
+			once: true,
+			mirror: false,
+			anchorPlacement: 'top-bottom',
+			disable: 'mobile'
+		});
+		// Loader Hide Script
+		window.addEventListener('load', function() {
+			const loading = document.getElementById('loading');
+			loading.style.opacity = '0';
+			setTimeout(() => {
+				loading.style.display = 'none';
+			}, 1500);
+		});
+
+	</script>
+
+</body>
+
+</html>
